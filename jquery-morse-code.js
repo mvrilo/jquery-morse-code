@@ -18,13 +18,12 @@
 		morse : function(string, option){
 
 			// All characters based on Wikipedia <http://en.wikipedia.org/wiki/Morse_code#Letters.2C_numbers.2C_punctuation>
-
 			var key = [' ','.',',','?',"'",'!','/','(',')','&',	// special chars
 			':',';','=','+','-','_','"','$','@',			// special chars
 			'0','1','2','3','4','5','6','7','8','9',		// numbers
 			'ä','å','ç','š','ð','ś','ł','é','ñ','ŝ','þ','ü',	// few non-latin letters
 			'a','b','c','d','e','f','g','h','i','j','k','l','m',	// letters
-			'n','o','p','q','r','s','t','u','v','w','x','y','z']; 	// letters
+			'n','o','p','q','r','s','t','u','v','w','x','y','z'];	// letters
 
 			var val = ['/','.-.-.-','--..--','..--..','.----.','-.-.--','-..-.','-.--.','-.--.-','.-...',	// special chars
 			'---...','-.-.-.','-...-','.-.-.','-....-','..--.-','.-..-.','...-..-','.--.-.',		// special chars
@@ -48,7 +47,7 @@
 				return false;
 			}
 
-			if (option == "encode" || option == undefined){
+			if (option == "encode" || option === undefined){
 				toEncode();
 				if (res.match(/undefined/gi)){
 					res = ' ';
@@ -74,7 +73,6 @@
 				res = 'error';
 				return res;
 			}
-			return false;
 		}
 	});
 })(jQuery);
