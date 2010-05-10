@@ -36,43 +36,36 @@
 			var enc = str.match(/[\-\.\/]+/g);
 			var res = '&nbsp;';
 
-			function toEncode(){
-				$.each(str, function(index,value){
-					var i = $.inArray(value, key);
-					res += val[i] + ' ';
-				});
-			}
-			
 			if (str.length === 0){
 				return false;
 			}
 
-			if (option == "encode" || option === undefined){
-				toEncode();
+			if (option === "encode" || option === undefined){
+				$.each(str, function(index,value){
+					var i = $.inArray(value, key);
+					res += val[i] + ' ';
+				});
+
 				if (res.match(/undefined/gi)){
-					res = ' ';
+					res = '&nbsp;';
 				}
-				return res;
 			}
-			else if (option == "decode"){
+			else if (option === "decode"){
 				if (!str.match(/[^\.\s\-\/]+/g)){
 					$.each(enc, function(index, value){
 						var i = $.inArray(value, val);
 						res += key[i];
 						if (res.match(/undefined/gi)){
-							res = ' ';
+							res = '&nbsp;';
 						}
 					});
-					return res;
-				}
-				else {
-					return res;
 				}
 			}
 			else {
 				res = 'error';
-				return res;
 			}
+
+			return res;
 		}
 	});
 })(jQuery);
