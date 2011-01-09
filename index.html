@@ -2,20 +2,46 @@
 	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="pt-br">
 <head>
-	<title> jQuery Morse Code - Demo </title>
+	<title> jQuery Morse Code </title>
 	<meta name="keywords" content="jquery, morse, code, encrypt, decrypt, mvrilo, murilo, santana, plugin" />
 	<meta name="author" content="Murilo Santana" />
+	<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<!--[if lte IE 6]><style type="text/css">body {display:block}</style><![endif]-->
 </head>
 <body>
-	<h1>hello world!</h1>
-	<h2></h2>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="jquery-morse-code.js"></script>
-<script type="text/javascript">
-	$(document).ready(function(){
-		$('h2').html($.morse('hello world!'));
-	});
-</script>
-</body>
 
+<div id="cont">
+	<div id="links">
+		<p><a href="http://github.com/mvrilo/jquery-morse-code/zipball/master" alt="3.1 kb" title="3.1 kb">download</a><br/>
+		<a href="http://github.com/mvrilo/jquery-morse-code/raw/master/jquery-morse-code.js" alt="2.4 kb" title="2.4 kb">source</a> <a href="http://github.com/mvrilo/jquery-morse-code/raw/master/jquery-morse-code.min.js" alt="1.5 kb" title="1.5 kb">(min)</a><br/>
+		<a href="http://mvrilo.github.com" rel="external" alt="Murilo Santana" title="Murilo Santana">author</a></p>
+	</div>
+	<form action="">
+		<fieldset>
+			<h1>try it!</h1>
+			<input id="text" type="text" value="" /><br class="clear" />
+			<button type="submit">ok</button>
+			<div id="coding">
+				<input type="radio" value="encode" name="code" checked="checked" /> encode<br />
+				<input type="radio" value="decode" name="code" /> decode 
+			</div>
+		</fieldset>
+		<p id="field">&nbsp;</p><br class="clear" />
+	</form>
+	<p id="footer">Murilo Santana, 2010</p>
+</div>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://github.com/mvrilo/jquery-morse-code/raw/master/jquery-morse-code.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+try {
+	var pageTracker = _gat._getTracker("UA-13136299-5");
+	pageTracker._trackPageview();
+} catch(err) {}</script>
+</body>
 </html>

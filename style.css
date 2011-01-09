@@ -1,0 +1,66 @@
+/* Reset the page */
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,font,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,input,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td{margin:0;padding:0;border:0;outline:0;font-size:18px;vertical-align:baseline;background:transparent;font-family:helvetica,verdana,arial;color:black;text-decoration:none;}body{line-height:1;}ol,ul{list-style:none;}blockquote,q{quotes:none;}blockquote:before, blockquote:after, q:before, q:after{content:'';}:focus{outline:0;} ins{text-decoration:none;}del{text-decoration:line-through;}table{border-collapse:collapse;border-spacing:0;}.clear{clear:both;}.floatLeft{float:left;}.floatRight{float:right;}
+
+/* init */
+body {
+	padding: 40px;
+	margin: auto;
+	text-align: center;
+	display: none;
+}
+#cont {
+	margin: auto;
+	width: 315px;
+	position: relative;
+	text-align: center;
+}
+form {
+	width: 315px;
+	border-bottom: 1px dashed #EEE;
+}
+h1 {font-size: 30px}
+p a {
+	color: #636600;
+	font-size: 15px;
+	font-style: italic;
+}
+p a:hover {color: #6f7335; text-decoration: underline}
+#field {
+	font-size: 14px;
+	color: #53ab00;
+	border-top: 1px dashed #EEE;
+	padding-top: 10px;
+}
+#links {
+	position: absolute;
+	top: 80px;
+	left: 0px;
+	text-align: left;
+}
+#text {
+	border: 1px solid black;
+	padding: 3px 5px;
+	margin: 10px 0px 5px 0px;
+	font-size: 16px;
+	width: 300px;
+}
+#coding {
+	position: absolute;
+	font-size: 16px;
+	top: 90px;
+	left: 200px;
+}
+#coding input {
+	margin: 2px 0px;
+	vertical-align: top;
+}
+button {
+	width: 65px;
+	height: 30px;
+	margin: 21px 0px 40px 0px;
+}
+#footer {
+	margin-top: 10px;
+	font-size: 11px;
+	color: #999;
+}
